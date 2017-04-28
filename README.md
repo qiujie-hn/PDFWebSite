@@ -2,8 +2,16 @@
 Android WebView 加载 PDF 文件实现。其原理就是在 app 本地搭建一个 website ,然后利用 WebView 加载这个站点，站点去实现加载显示 PDF 的目的，站点其原理也是采用 js 框架去实现的。
 (突然感觉 JS 是万能的 - -)。
 
->安卓实现 PDF 阅读还有一个开源库实现了，主要采用 ndk 开发实现的，主要开发语言是 C。地址：https://github.com/muennich/mupdf
+>安卓实现 PDF 阅读还有一个开源库实现了，主要采用 ndk 开发实现的，主要开发语言是 C。地址：https://github.com/muennich/mupdf。
 
+# PDFWebSite VS mupdf
+### PDFWebSite
+优点：集成简单，集成简单，集成简单
+缺点：阅读界面是 web 页面，非原生组件，体验上不如原生View。阅读样式上要定制，需要改 website 源码
+
+### mupdf
+优点：有原生组件实现，在体验上不错
+缺点：集成麻烦，需要自行编译 so
 
 # 开发指南
 ```java
