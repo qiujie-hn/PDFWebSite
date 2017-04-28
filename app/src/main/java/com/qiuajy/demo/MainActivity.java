@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings settings = webView.getSettings();
         // 开启 javascript 功能；原因：站点采用了 javascript
         settings.setJavaScriptEnabled(true);
-        // 这句解决本地路跨域问题，如果你的 PDF 文件在站点里，是不需要的，但是，我们一般情况是加载站点外部 PDF 文件
+        // 这句解决本地跨域问题，如果你的 PDF 文件在站点里，是不需要的，但是，我们一般情况是加载站点外部 PDF 文件
         settings.setAllowFileAccessFromFileURLs(true);
 
         // demo code
