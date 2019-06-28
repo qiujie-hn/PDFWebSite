@@ -1,11 +1,11 @@
 package com.qiuajy.demo;
 
 import android.annotation.SuppressLint;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +29,6 @@ public class MainActivity extends AppCompatActivity {
          * 取决于开发者自己目录名称
          * 参数：pdf = 这里是 PDF 文件路径
          */
-        webView.loadUrl("file:///android_asset/pdf-website/index.html?pdf=../pdf/packt-gradle-for-android.pdf");
+        webView.loadUrl("file:///android_asset/pdf-website/index.html?pdf=/storage/emulated/0/Download/123.pdf");
     }
 }
